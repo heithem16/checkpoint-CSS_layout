@@ -1,0 +1,149 @@
+* {
+  margin: 0%;
+  padding: 0;
+}
+
+/* main */
+element.style {
+}
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background: hsla(0, 0%, 100%, 0.98);
+  transition: box-shadow 0.25s ease 0s;
+}
+nav {
+  display: block;
+}
+ul li {
+  position: start;
+  display: inline;
+  margin: 20px;
+}
+/* introduction part CSS */
+#introduction {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* width: 80%; */
+  margin: 2% 10%;
+}
+#introduction div {
+  display: flex;
+}
+
+#introduction h1 {
+  font-family: "Comforter Brush", cursive;
+  color: #00b39b;
+  font-size: 2.125rem;
+  margin: 2%;
+}
+#introduction div p {
+  /* line-height: 1.75; */
+  font-weight: 400;
+  color: gray;
+  line-height: 1.5;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  #introduction div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #introduction div p {
+    width: 300px;
+    /* color: red; */
+  }
+}
+/* ------------------------------------------- */
+/* countriues part CSS */
+#countries {
+  /* 1step : postions and alignements: using flexBox */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* step 2: box model */
+  margin: 2% 10%;
+}
+.country {
+  margin-bottom: 2%;
+  border-radius: 2%;
+}
+.country img {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+.country div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.country div {
+  padding: 4%;
+}
+.country div p {
+  color: gray;
+}
+.country div button {
+  color: white;
+  background-color: blue;
+  padding: 2%;
+}
+.country:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+/*-----------------------------------------------------------------------------------------*/
+
+.services {
+  margin: 3.75rem rem auto 2.5rem;
+}
+section__inner {
+  zoom: 1;
+  max-width: 1015px;
+  padding: 0 20px;
+  margin: 0 auto;
+  position: relative;
+}
+.section__inner:after,
+.section__inner:before {
+  content: "";
+  display: table;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+.section__inner:after {
+  clear: both;
+}
+.section__inner:after,
+.section__inner:before {
+  content: "";
+  display: table;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+::selection {
+  background: #00b39b;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(0, 179, 155);
+  color: #fff;
+  text-shadow: none;
+}
